@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="P1Regression" thread-count="6"  parallel="instances" verbose="2">
+
+<parameter name="DriverLocation" value="src/resources/chromedriver.exe"></parameter>
+<!-- <parameter name="DriverLocation" value="C:\\Users\Administrator\\Desktop\\webdriver\\chromedriver.exe"></parameter> -->
+
+<!-- <parameter name="WebsiteURL" value="https://www3.lenovo.com/le/1213414740/us/en"></parameter>
+<parameter name="XMLListLocationA" value="D:\\xmlA.xml"></parameter>
+<parameter name="XMLListLocationB" value="D:\\xmlB.xml"></parameter>
+<parameter name="CompareresultLocation" value="D:\\compareResult.xml"></parameter> -->
+
+<!--Phase 2 Test, used to validate product comparing with Phase 1-->
+
+   <test name="CG25000H">
+    <classes>
+	   <class name="Testdata.CG25000Htestdata"></class>
+    </classes>
+  </test>
+
+ </suite>
